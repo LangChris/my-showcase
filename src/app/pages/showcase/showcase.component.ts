@@ -65,10 +65,13 @@ const schema = object({
   `.trim();
 
   contactName = 'Chris Lang';
+  subtitle = 'Full Stack Engineer';
+  location = 'Fairfax, VA';
   contactPhone = '1+ 703 • 887 • 9385'
   contactEmail = 'christopherjlang01@gmail.com';
+  website = 'https://www.langdevelopments.com';
   githubHandle = 'LangChris';
-  subtitle = 'Full Stack Engineer';
+  
   certifications = [
     { title: 'AWS Certified Developer - Associate', date: '2025-05-23' },
     { title: 'Agile SAFe Certified', date: '2023-10-01' },
