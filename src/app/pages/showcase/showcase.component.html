@@ -1,5 +1,4 @@
-
-<div class=" hero">
+<div id="top" class=" hero">
     <h1 class="hero-title">{{ contactName }}</h1>
 
     <p class="hero-info">Phone: {{ contactPhone }}</p>
@@ -9,7 +8,7 @@
     <p class="subtitle">
       {{ subtitle }}
     </p>
-    <div class="scroll-down">&#8675;</div>
+    <div class="scroll-down" (click)="scrollTo('mid')" title="Scroll to Showcase">&#8675;</div>
 </div>
 
 <div class="section about" data-aos="fade-up">
@@ -117,8 +116,14 @@
   </div>
 </div>
 
-<div class="section showcase" data-aos="fade-up">
-  <h2>Showcase</h2>
+<div id="mid" class="hero">
+    <div class="scroll-down" (click)="scrollTo('top')" title="Back to Top">&#8673;</div>
+    <h1 class="hero-title">Showcase</h1>
+    <div class="scroll-down" (click)="scrollTo('bottom')" title="Scroll to End">&#8675;</div>
+</div>
+
+<div class="section gallery" data-aos="fade-up">
+  <h2>Gallery</h2>
   <app-carousel [images]="screenshots"></app-carousel>
 </div>
 
@@ -135,9 +140,13 @@
 </div>
 
 <div class="section projects" data-aos="fade-up">
-  <h2>Repos</h2>
+  <h2>Repositories</h2>
   <div class="project-card" *ngFor="let project of projects">
     <h3>{{ project }}</h3>
     <p>Interactive walkthrough, GitHub link, and demo available.</p>
   </div>
+</div>
+
+<div id="bottom" class="hero">
+    <div class="scroll-down" (click)="scrollTo('mid')" title="Back to Showcase">&#8673;</div>
 </div>

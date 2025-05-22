@@ -166,10 +166,10 @@ const schema = object({
   ];
 
   screenshots = [
-    'screenshots/app1.PNG',
-    'screenshots/app2.PNG',
-    'screenshots/app3.PNG',
-    'screenshots/app4.PNG'
+    'screenshots/budget-lab-preview.png',
+    'screenshots/arwhome-preview.png',
+    'screenshots/christmas-list-preview.png',
+    'screenshots/realestate-calculator-preview.png',
   ];
 
   milestones = [
@@ -203,4 +203,12 @@ const schema = object({
   toggleClient(index: number): void {
     this.activeClientIndex = index;
   }
+
+  scrollTo(sectionId: 'top' | 'mid' | 'bottom'): void {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
 }
