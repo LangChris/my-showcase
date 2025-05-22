@@ -37,10 +37,10 @@
 </div>
 
 <div class="section timeline" data-aos="fade-up">
-  <h2>Career Timeline</h2>
+  <h2>Career Milestones</h2>
 
   <div class="timeline-container">
-    <div class="timeline-item" *ngFor="let milestone of careerMilestones; let i = index">
+    <div class="timeline-item" *ngFor="let milestone of milestones; let i = index">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
         <h4>{{ milestone.year }}</h4>
@@ -62,16 +62,25 @@
   </div>
 </div>
 
-<div class="section clients" data-aos="fade-up">
-  <h2>Past Clients</h2>
+<div class="section clients centered" data-aos="fade-up">
+  <h2>Client Testimonials</h2>
+
   <div class="tab-grid">
-    <div class="tab-card" *ngFor="let client of clients">
-      <span>{{ client }}</span>
-    </div>
+    <button
+      class="tab-card"
+      *ngFor="let client of clients; let i = index"
+      [ngClass]="{ 'active': activeClientIndex === i }"
+      (click)="toggleClient(i)">
+      <span>{{ client.name }}</span>
+    </button>
+  </div>
+
+  <div class="testimonial-panel" *ngIf="activeClientIndex !== null">
+    <p>{{ clients[activeClientIndex].testimonial }}</p>
   </div>
 </div>
 
-<div class="section certs" data-aos="fade-up">
+<div class="section certs centered" data-aos="fade-up">
   <h2>Certifications</h2>
   <div class="tab-grid">
     <div class="tab-card" *ngFor="let certification of certifications">
@@ -81,7 +90,7 @@
   </div>
 </div>
 
-<div class="section tech-expertise" data-aos="fade-up">
+<div class="section tech-expertise centered" data-aos="fade-up">
   <h2>Technical Expertise</h2>
 
   <div class="tech-search-wrapper">
