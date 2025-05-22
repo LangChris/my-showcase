@@ -201,6 +201,6 @@ const schema = object({
   }
 
   toggleClient(index: number): void {
-    this.activeClientIndex = this.activeClientIndex === index ? null : index;
+    this.activeClientIndex = index;
   }
 }
