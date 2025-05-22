@@ -1,0 +1,239 @@
+:host {
+  display: block;
+  background: #121212;
+  color: #e0e0e0;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 3rem 1rem;
+  max-width: 960px;
+  margin: auto;
+  border-bottom: 1px solid #333;
+  animation: fadeInUp 0.8s ease-in-out both;
+  &:first-child {
+    border-bottom: none;
+  }
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.hero {
+  background: radial-gradient(ellipse at top left, #1e3c72, #2a5298);
+  box-shadow: 0 4px 8px 0 #eeeeee;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+
+  .hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    transform: translateZ(100px);
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+  }
+
+  .hero-info {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    transform: translateZ(80px);
+    color: #ccc;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    color: #aaa;
+    transform: translateZ(60px);
+  }
+  
+  .scroll-down {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #888;
+    animation: bounce 2s infinite;
+    transform: translateZ(40px);
+  }
+}
+
+.timeline {
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+
+    .timeline-dot {
+      width: 14px;
+      height: 14px;
+      background: #ffeb3b;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      position: absolute;
+      left: -10px;
+      top: 0;
+      z-index: 2;
+      box-shadow: 0 0 0 4px #3f51b5;
+    }
+
+    .timeline-content {
+      background: #1e1e1e;
+      padding: 1rem;
+      border-radius: 8px;
+      color: #eee;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+
+      h4 {
+        margin: 0;
+        font-size: 1.1rem;
+        color: #90caf9;
+      }
+
+      p {
+        margin: 0.3rem 0 0;
+        font-size: 0.95rem;
+        color: #ccc;
+      }
+    }
+  }
+}
+
+.tab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.tab-card {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s;
+  &:hover {
+    background: #2a2a2a;
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.project-card {
+  background: #1e1e1e;
+  padding: 1.5rem;
+  border-left: 4px solid #3f51b5;
+  margin-bottom: 1rem;
+  &:hover {
+    background: #2a2a2a;
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.certs {
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+.tech-expertise {
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .tech-search-wrapper {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto 2rem;
+}
+
+  .tech-search {
+    width: 95%;
+    padding: 0.75rem 1rem 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background: #1b1b1b;
+    color: #eee;
+  }
+
+  .clear-icon {
+    position: absolute;
+    top: 50%;
+    right: 0rem;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #aaa;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.2s;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .tech-group.highlight {
+    border-left: 4px solid #ffeb3b; // material yellow
+    background-color: rgba(255, 235, 59, 0.05);
+  }
+
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .tech-group {
+    background: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #3f51b5;
+    color: #eee;
+
+    h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: #90caf9;
+    }
+
+    p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    &:hover {
+      background: #2a2a2a;
+      transform: scale(1.02);
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}

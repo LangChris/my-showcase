@@ -1,0 +1,13 @@
+<div class="scroll-3d-container"
+     (mousedown)="onDragStart($event)"
+     (mouseup)="onDragEnd($event)"
+     (touchstart)="onDragStart($event)"
+     (touchend)="onDragEnd($event)">
+  <div class="scroll-3d-wrapper" [style.transform]="getTransform()">
+    <div class="scroll-3d-face"
+         *ngFor="let image of images; let i = index"
+         [style.transform]="getFaceTransform(i)">
+      <img [src]="image" alt="Image" draggable="false" />
+    </div>
+  </div>
+</div>

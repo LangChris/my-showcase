@@ -1,0 +1,8 @@
+@if (header) {
+<span class="code-snippet-header">{{ header }}</span>
+}
+<div class="code-snippet">
+  <h3>{{ title }}</h3>
+  <button class="copy-btn" (click)="copyCode()">📋 {{ copyText }}</button>
+  <pre><code [innerText]="code"></code></pre>
+</div>

@@ -1,0 +1,133 @@
+
+<div class=" hero">
+    <h1 class="hero-title">{{ contactName }}</h1>
+
+    <p class="hero-info">Phone: {{ contactPhone }}</p>
+    <p class="hero-info">Email: {{ contactEmail }}</p>
+    <p class="hero-info">GitHub: &#64;{{ githubHandle }}</p>
+
+    <p class="subtitle">
+      {{ subtitle }}
+    </p>
+    <div class="scroll-down">&#8675;</div>
+</div>
+
+<div class="section about" data-aos="fade-up">
+  <h2>Who am I?</h2>
+  <p>
+    I’m a full stack cloud-native engineer passionate about building scalable, performant, and elegant software solutions.
+    specializing in <strong>TypeScript</strong>, <strong>Angular</strong>, <strong>Node.js</strong>, and <strong>serverless architecture on AWS</strong>.
+  </p>
+  <p>
+    With over 9 years of professional experience driving operational excellence and delivering high-impact enterprise solutions, I bring deep expertise in cloud technologies, distributed architecture, and modern engineering practices.
+  </p>
+  <p>
+    I’m highly proficient with <strong>AWS Cloud</strong>, <strong>Docker</strong>, <strong>Kubernetes</strong>, and <strong>Angular</strong>, and apply best practices like <strong>CI/CD</strong>, <strong>TDD</strong>, <strong>Stateless Design</strong>, and <strong>Microservices</strong> to ensure reliability and agility throughout the software lifecycle.
+  </p>
+  <p>
+    My development toolkit spans <strong>Java</strong>, <strong>Node.js</strong>, <strong>Angular</strong>, <strong>Spring</strong>, and <strong>SOA</strong>, and I’m experienced in both <strong>Agile</strong> and <strong>Waterfall</strong> SDLC models. I thrive in dynamic, collaborative environments where I can combine my technical acumen and systems thinking to deliver impactful, forward-thinking solutions.
+  </p>
+</div>
+
+<div class="section looking-for" data-aos="fade-up">
+  <h2>What I'm Looking For</h2>
+  <p>
+    I thrive in environments where I can architect scalable solutions, work alongside high-performing teams, and contribute to meaningful projects with cloud-native and full stack technologies.
+  </p>
+</div>
+
+<div class="section timeline" data-aos="fade-up">
+  <h2>Career Timeline</h2>
+
+  <div class="timeline-container">
+    <div class="timeline-item" *ngFor="let milestone of careerMilestones; let i = index">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h4>{{ milestone.year }}</h4>
+        <p>{{ milestone.title }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section experience" data-aos="fade-up">
+  <h2>Experience</h2>
+  <div class="experience-card" *ngFor="let experience of workExperience">
+    <h3>{{ experience.title }}</h3>
+    <p>{{ experience.company }} ({{ experience.startDate }} - {{ experience.endDate }})</p>
+    <p>{{ experience.description }}</p>
+    <ul>
+      <li *ngFor="let task of experience.tasks">{{ task }}</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section clients" data-aos="fade-up">
+  <h2>Past Clients</h2>
+  <div class="tab-grid">
+    <div class="tab-card" *ngFor="let client of clients">
+      <span>{{ client }}</span>
+    </div>
+  </div>
+</div>
+
+<div class="section certs" data-aos="fade-up">
+  <h2>Certifications</h2>
+  <div class="tab-grid">
+    <div class="tab-card" *ngFor="let certification of certifications">
+      <p>{{ certification.title }} ✔️</p>
+      <p><small>iss: {{ certification.date }}</small></p>
+    </div>
+  </div>
+</div>
+
+<div class="section tech-expertise" data-aos="fade-up">
+  <h2>Technical Expertise</h2>
+
+  <div class="tech-search-wrapper">
+    <input
+      type="text"
+      class="tech-search"
+      [(ngModel)]="techSearch"
+      placeholder="Search" />
+
+    <button *ngIf="techSearch" class="clear-icon" (click)="techSearch = ''" aria-label="Clear search">
+      ✖
+    </button>
+  </div>
+
+  <div class="tech-grid">
+    <div 
+      *ngFor="let skillGroup of technicalSkills | keyvalue"
+      class="tech-group" 
+      [ngClass]="{ 'highlight': matchesSearch(skillGroup) }">
+      <h3>{{ skillGroup.key }}</h3>
+      <p>{{ skillGroup.value.join(', ') }}</p>
+    </div>
+  </div>
+</div>
+
+<div class="section showcase" data-aos="fade-up">
+  <h2>Showcase</h2>
+  <app-carousel [images]="screenshots"></app-carousel>
+</div>
+
+<div class="section code" data-aos="fade-up">
+  <h2>Code Samples</h2>
+  <div *ngFor="let snippet of codeSnippets">
+    <app-code-snippet
+      [header]="snippet.header"
+      [title]="snippet.title"
+      [language]="snippet.language"
+      [code]="snippet.code">
+    </app-code-snippet>
+  </div>
+</div>
+
+<div class="section projects" data-aos="fade-up">
+  <h2>Repos</h2>
+  <div class="project-card" *ngFor="let project of projects">
+    <h3>{{ project }}</h3>
+    <p>Interactive walkthrough, GitHub link, and demo available.</p>
+  </div>
+</div>
