@@ -1,0 +1,39 @@
+.practices {
+  
+  .tech-group.highlight {
+    border-left: 4px solid #ffeb3b; // material yellow
+    background-color: rgba(255, 235, 59, 0.05);
+  }
+
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .tech-group {
+    background: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #3f51b5;
+    color: #eee;
+
+    h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: #90caf9;
+    }
+
+    p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    &:hover {
+      background: #2a2a2a;
+      transform: scale(1.02);
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+}

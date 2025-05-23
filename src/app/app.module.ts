@@ -8,6 +8,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { FormsModule } from '@angular/forms';
 import { ExperienceComponent } from './sections/experience/experience.component';
 import { CertificationsComponent } from './sections/certifications/certifications.component';
+import { BestPracticesComponent } from './sections/best-practices/best-practices.component';
 
 @NgModule({ declarations: [
         AppComponent,
@@ -16,6 +17,7 @@ import { CertificationsComponent } from './sections/certifications/certification
         CarouselComponent,
         ExperienceComponent,
         CertificationsComponent,
+        BestPracticesComponent,
     ],
     bootstrap: [AppComponent], 
     imports: [
