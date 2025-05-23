@@ -15,8 +15,6 @@ export class ShowcaseComponent {
   website = 'www.langdevelopments.com';
   githubHandle = 'LangChris';
 
-  projects = ['MyBudgetLab', 'ProxyPeek Chrome Extension', 'SuperHeroMod for CS:CZ'];
-
   screenshots = [
     'screenshots/budget-lab-preview.png',
     'screenshots/arwhome-preview.png',

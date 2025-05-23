@@ -13,6 +13,7 @@ import { ClientsComponent } from './sections/clients/clients.component';
 import { MilestonesComponent } from './sections/milestones/milestones.component';
 import { TechnologiesComponent } from './sections/technologies/technologies.component';
 import { CodeSnippetsComponent } from './sections/code-snippets/code-snippets.component';
+import { RepositoriesComponent } from './sections/repositories/repositories.component';
 
 @NgModule({ declarations: [
         AppComponent,
@@ -26,6 +27,7 @@ import { CodeSnippetsComponent } from './sections/code-snippets/code-snippets.co
         MilestonesComponent,
         TechnologiesComponent,
         CodeSnippetsComponent,
+        RepositoriesComponent,
     ],
     bootstrap: [AppComponent], 
     imports: [
