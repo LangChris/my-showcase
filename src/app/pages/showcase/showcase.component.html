@@ -68,20 +68,12 @@
 </div>
 
 <div class="section gallery" data-aos="fade-up">
-  <h2>Gallery</h2>
+  <h2 class="text-center">Gallery</h2>
   <app-carousel [images]="screenshots"></app-carousel>
 </div>
 
-<div class="section code" data-aos="fade-up">
-  <h2>Code Samples</h2>
-  <div *ngFor="let snippet of codeSnippets">
-    <app-code-snippet
-      [header]="snippet.header"
-      [title]="snippet.title"
-      [language]="snippet.language"
-      [code]="snippet.code">
-    </app-code-snippet>
-  </div>
+<div class="section" data-aos="fade-up">
+  <app-code-snippets></app-code-snippets>
 </div>
 
 <div class="section projects" data-aos="fade-up">

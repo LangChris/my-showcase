@@ -1,0 +1,11 @@
+<div class="code">
+  <h2 class="text-center">Code Samples</h2>
+  <div *ngFor="let snippet of codeSnippets">
+    <app-code-snippet
+      [header]="snippet.header"
+      [title]="snippet.title"
+      [language]="snippet.language"
+      [code]="snippet.code">
+    </app-code-snippet>
+  </div>
+</div>

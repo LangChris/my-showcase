@@ -12,6 +12,7 @@ import { BestPracticesComponent } from './sections/best-practices/best-practices
 import { ClientsComponent } from './sections/clients/clients.component';
 import { MilestonesComponent } from './sections/milestones/milestones.component';
 import { TechnologiesComponent } from './sections/technologies/technologies.component';
+import { CodeSnippetsComponent } from './sections/code-snippets/code-snippets.component';
 
 @NgModule({ declarations: [
         AppComponent,
@@ -24,6 +25,7 @@ import { TechnologiesComponent } from './sections/technologies/technologies.comp
         ClientsComponent,
         MilestonesComponent,
         TechnologiesComponent,
+        CodeSnippetsComponent,
     ],
     bootstrap: [AppComponent], 
     imports: [
