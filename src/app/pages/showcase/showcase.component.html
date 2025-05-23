@@ -38,22 +38,8 @@
   </p>
 </div>
 
-<div class="section timeline" data-aos="fade-up">
-  <h2>Career Milestones</h2>
-
-  <div class="timeline-container">
-    <div class="timeline-item" *ngFor="let milestone of milestones; let i = index">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h4>{{ milestone.year }}</h4>
-        <p>{{ milestone.title }}</p>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="section experience" data-aos="fade-up">
-  <h2>Experience</h2>
+  <h2 class="centered">Experience</h2>
   <div class="experience-card" *ngFor="let experience of workExperience">
     <h3>{{ experience.title }}</h3>
     <p>{{ experience.company }} ({{ experience.startDate }} - {{ experience.endDate }})</p>
@@ -61,6 +47,27 @@
     <ul>
       <li *ngFor="let task of experience.tasks">{{ task }}</li>
     </ul>
+  </div>
+</div>
+
+<div class="section certs centered" data-aos="fade-up">
+  <h2>Certifications</h2>
+  <div class="tab-grid">
+    <div class="tab-card" *ngFor="let certification of certifications">
+      <h3>{{ certification.title }} ✔️</h3>
+      <p><small>iss: {{ certification.date }}</small></p>
+    </div>
+  </div>
+</div>
+
+<div class="section badges" data-aos="fade-up">
+  <h2>Best Practices</h2>
+
+  <div class="tech-grid">
+    <div class="tech-group highlight" *ngFor="let badge of badges">
+      <h4>{{ badge.label }}</h4>
+      <p>{{ badge.description }}</p>
+    </div>
   </div>
 </div>
 
@@ -82,12 +89,16 @@
   </div>
 </div>
 
-<div class="section certs centered" data-aos="fade-up">
-  <h2>Certifications</h2>
-  <div class="tab-grid">
-    <div class="tab-card" *ngFor="let certification of certifications">
-      <h3>{{ certification.title }} ✔️</h3>
-      <p><small>iss: {{ certification.date }}</small></p>
+<div class="section timeline" data-aos="fade-up">
+  <h2>Career Milestones</h2>
+
+  <div class="timeline-container">
+    <div class="timeline-item" *ngFor="let milestone of milestones; let i = index">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h4>{{ milestone.year }}</h4>
+        <p>{{ milestone.title }}</p>
+      </div>
     </div>
   </div>
 </div>

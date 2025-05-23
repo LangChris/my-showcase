@@ -72,6 +72,17 @@ const schema = object({
   website = 'https://www.langdevelopments.com';
   githubHandle = 'LangChris';
   
+  badges = [
+    {
+      label: 'Agile Enthusiast 🚀',
+      description: 'I embrace Agile principles, utilizing tools such as Jira, Confluence and Slack to foster collaboration and transparency'
+    },
+    {
+      label: 'Documentation Advocate 📘✍️',
+      description: "I'm passionate about clear documentation, ensuring teams can onboard quickly and efficiently is always at the core of everything I do"
+    },
+  ];
+
   certifications = [
     { title: 'AWS Certified Developer - Associate', date: '2025-05-23' },
     { title: 'Agile SAFe Certified', date: '2023-10-01' },
