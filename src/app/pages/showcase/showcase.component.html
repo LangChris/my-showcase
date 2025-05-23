@@ -41,14 +41,8 @@
   <app-experience></app-experience>
 </div>
 
-<div class="section certs centered" data-aos="fade-up">
-  <h2>Certifications</h2>
-  <div class="tab-grid">
-    <div class="tab-card" *ngFor="let certification of certifications">
-      <h3>{{ certification.title }} ✔️</h3>
-      <p><small>iss: {{ certification.date }}</small></p>
-    </div>
-  </div>
+<div class="section" data-aos="fade-up">
+  <app-certifications></app-certifications>
 </div>
 
 <div class="section badges" data-aos="fade-up">

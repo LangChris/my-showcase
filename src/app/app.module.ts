@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { FormsModule } from '@angular/forms';
 import { ExperienceComponent } from './sections/experience/experience.component';
+import { CertificationsComponent } from './sections/certifications/certifications.component';
 
 @NgModule({ declarations: [
         AppComponent,
@@ -14,6 +15,7 @@ import { ExperienceComponent } from './sections/experience/experience.component'
         CodeSnippetComponent,
         CarouselComponent,
         ExperienceComponent,
+        CertificationsComponent,
     ],
     bootstrap: [AppComponent], 
     imports: [
