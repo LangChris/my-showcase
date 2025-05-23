@@ -1,0 +1,17 @@
+<div class="clients">
+  <h2 class="text-center">Client Testimonials</h2>
+
+  <div class="tab-grid">
+    <button
+      class="tab-card"
+      *ngFor="let client of clients; let i = index"
+      [ngClass]="{ 'active': activeClientIndex === i }"
+      (click)="toggleClient(i)">
+      <span>{{ client.name }}</span>
+    </button>
+  </div>
+
+  <div class="testimonial-panel" *ngIf="activeClientIndex !== null">
+    <p>{{ clients[activeClientIndex].testimonial }}</p>
+  </div>
+</div>

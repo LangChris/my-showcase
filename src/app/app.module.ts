@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { ExperienceComponent } from './sections/experience/experience.component';
 import { CertificationsComponent } from './sections/certifications/certifications.component';
 import { BestPracticesComponent } from './sections/best-practices/best-practices.component';
+import { ClientsComponent } from './sections/clients/clients.component';
 
 @NgModule({ declarations: [
         AppComponent,
@@ -18,6 +19,7 @@ import { BestPracticesComponent } from './sections/best-practices/best-practices
         ExperienceComponent,
         CertificationsComponent,
         BestPracticesComponent,
+        ClientsComponent,
     ],
     bootstrap: [AppComponent], 
     imports: [
