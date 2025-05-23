@@ -5,10 +5,9 @@
       <br />
       {{ location }}
     </p>
-    <p class="hero-info">Phone: <a [href]="'tel:' + contactPhone">{{ contactPhone }}</a></p>
-    <p class="hero-info">Email: <a [href]="'email:' + contactEmail">{{ contactEmail }}</a></p>
-    <p class="hero-info">GitHub: <a [href]="'https://github.com/' + githubHandle + '?tab=repositories'" target="_blank">&#64;{{ githubHandle }}</a></p>
-    <p class="hero-info">Website: <a [href]="website" target="_blank">{{ website }}</a></p>
+    <p class="hero-info"><a [href]="'tel:' + contactPhone">{{ contactPhone }}</a></p>
+    <p class="hero-info"><a [href]="'email:' + contactEmail">{{ contactEmail }}</a></p>
+    <p class="hero-info"><a [href]="'https://' + website" target="_blank">{{ website }}</a></p>
     
     <div class="scroll-down" (click)="scrollTo('mid')" title="Scroll to Showcase">&#8675;</div>
 </div>
@@ -89,7 +88,7 @@
   </div>
 </div>
 
-<div class="section timeline" data-aos="fade-up">
+<div class="section timeline centered" data-aos="fade-up">
   <h2>Career Milestones</h2>
 
   <div class="timeline-container">

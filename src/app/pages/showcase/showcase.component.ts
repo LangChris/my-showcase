@@ -69,7 +69,7 @@ const schema = object({
   location = 'Fairfax, VA';
   contactPhone = '1+ 703 • 887 • 9385'
   contactEmail = 'christopherjlang01@gmail.com';
-  website = 'https://www.langdevelopments.com';
+  website = 'www.langdevelopments.com';
   githubHandle = 'LangChris';
   
   badges = [

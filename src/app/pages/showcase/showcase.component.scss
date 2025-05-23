@@ -72,7 +72,8 @@
 
 .timeline {
   padding: 2rem 1rem;
-  
+  max-width: 400px;
+
   .timeline-item {
     position: relative;
     margin-bottom: 3rem;
@@ -109,18 +110,6 @@
         color: #ccc;
       }
     }
-
-    // &:after {
-    //   content: '';
-    //   position: absolute;
-    //   left: 50%;
-    //   top: 91px;
-    //   width: 4px;
-    //   height: 50%;
-    //   background: #3f51b5;
-    //   transform: translateX(-50%);
-    //   z-index: 1;
-    // }
   }
 }
 
