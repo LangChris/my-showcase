@@ -1,0 +1,25 @@
+<div class="tech-expertise centered">
+  <h2 class="text-center">Technical Expertise</h2>
+
+  <div class="tech-search-wrapper">
+    <input
+      type="text"
+      class="tech-search"
+      [(ngModel)]="techSearch"
+      placeholder="Search" />
+
+    <button *ngIf="techSearch" class="clear-icon" (click)="techSearch = ''" aria-label="Clear search">
+      ✖
+    </button>
+  </div>
+
+  <div class="tech-grid">
+    <div 
+      *ngFor="let skillGroup of technicalSkills | keyvalue"
+      class="tech-group" 
+      [ngClass]="{ 'highlight': matchesSearch(skillGroup) }">
+      <h3>{{ skillGroup.key }}</h3>
+      <p>{{ skillGroup.value.join(', ') }}</p>
+    </div>
+  </div>
+</div>

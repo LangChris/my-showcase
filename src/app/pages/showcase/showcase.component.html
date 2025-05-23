@@ -57,30 +57,8 @@
   <app-milestones></app-milestones>
 </div>
 
-<div class="section tech-expertise centered" data-aos="fade-up">
-  <h2>Technical Expertise</h2>
-
-  <div class="tech-search-wrapper">
-    <input
-      type="text"
-      class="tech-search"
-      [(ngModel)]="techSearch"
-      placeholder="Search" />
-
-    <button *ngIf="techSearch" class="clear-icon" (click)="techSearch = ''" aria-label="Clear search">
-      ✖
-    </button>
-  </div>
-
-  <div class="tech-grid">
-    <div 
-      *ngFor="let skillGroup of technicalSkills | keyvalue"
-      class="tech-group" 
-      [ngClass]="{ 'highlight': matchesSearch(skillGroup) }">
-      <h3>{{ skillGroup.key }}</h3>
-      <p>{{ skillGroup.value.join(', ') }}</p>
-    </div>
-  </div>
+<div class="section" data-aos="fade-up">
+  <app-technologies></app-technologies>
 </div>
 
 <div id="mid" class="hero">
