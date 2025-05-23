@@ -6,12 +6,14 @@ import { CodeSnippetComponent } from './components/code-snippet/code-snippet.com
 import { AppRoutingModule } from './app-routing.module';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { FormsModule } from '@angular/forms';
+import { ExperienceComponent } from './sections/experience/experience.component';
 
 @NgModule({ declarations: [
         AppComponent,
         ShowcaseComponent,
         CodeSnippetComponent,
         CarouselComponent,
+        ExperienceComponent,
     ],
     bootstrap: [AppComponent], 
     imports: [

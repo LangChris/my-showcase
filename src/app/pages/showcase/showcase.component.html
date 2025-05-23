@@ -37,16 +37,8 @@
   </p>
 </div>
 
-<div class="section experience" data-aos="fade-up">
-  <h2 class="centered">Experience</h2>
-  <div class="experience-card" *ngFor="let experience of workExperience">
-    <h3>{{ experience.title }}</h3>
-    <p>{{ experience.company }} ({{ experience.startDate }} - {{ experience.endDate }})</p>
-    <p>{{ experience.description }}</p>
-    <ul>
-      <li *ngFor="let task of experience.tasks">{{ task }}</li>
-    </ul>
-  </div>
+<div class="section" data-aos="fade-up">
+  <app-experience></app-experience>
 </div>
 
 <div class="section certs centered" data-aos="fade-up">
