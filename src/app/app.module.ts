@@ -10,6 +10,7 @@ import { ExperienceComponent } from './sections/experience/experience.component'
 import { CertificationsComponent } from './sections/certifications/certifications.component';
 import { BestPracticesComponent } from './sections/best-practices/best-practices.component';
 import { ClientsComponent } from './sections/clients/clients.component';
+import { MilestonesComponent } from './sections/milestones/milestones.component';
 
 @NgModule({ declarations: [
         AppComponent,
@@ -20,6 +21,7 @@ import { ClientsComponent } from './sections/clients/clients.component';
         CertificationsComponent,
         BestPracticesComponent,
         ClientsComponent,
+        MilestonesComponent,
     ],
     bootstrap: [AppComponent], 
     imports: [

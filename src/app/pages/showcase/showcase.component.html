@@ -53,18 +53,8 @@
   <app-clients></app-clients>
 </div>
 
-<div class="section timeline centered" data-aos="fade-up">
-  <h2>Career Milestones</h2>
-
-  <div class="timeline-container">
-    <div class="timeline-item" *ngFor="let milestone of milestones; let i = index">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h4>{{ milestone.year }}</h4>
-        <p>{{ milestone.title }}</p>
-      </div>
-    </div>
-  </div>
+<div class="section" data-aos="fade-up">
+  <app-milestones></app-milestones>
 </div>
 
 <div class="section tech-expertise centered" data-aos="fade-up">

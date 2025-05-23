@@ -1,0 +1,13 @@
+<div class="timeline">
+  <h2 class="text-center">Career Milestones</h2>
+
+  <div class="timeline-container">
+    <div class="timeline-item" *ngFor="let milestone of milestones; let i = index">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h4>{{ milestone.year }}</h4>
+        <p>{{ milestone.title }}</p>
+      </div>
+    </div>
+  </div>
+</div>
