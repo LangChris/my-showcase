@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './repositories.component.scss'
 })
 export class RepositoriesComponent {
-  repositories = ['MyBudgetLab', 'ProxyPeek Chrome Extension', 'SuperHeroMod for CS:CZ'];
+  repo = {
+    name: 'My-Showcase',
+    description: 'A showcase of my projects and skills',
+    url: 'https://github.com/LangChris/my-showcase'
+  };
 
 }

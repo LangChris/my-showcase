@@ -1,8 +1,10 @@
 <div class="repos">
-  <h2 class="text-center">Repositories</h2>
+  <h2 class="text-center">Repo</h2>
   
-  <div class="repo-card" *ngFor="let repo of repositories">
-    <h3>{{ repo }}</h3>
-    <p>Interactive walkthrough, GitHub link, and demo available.</p>
-  </div>
+  <a [href]="repo.url" target="_blank" rel="noopener noreferrer" class="repo-link">
+    <div class="repo-card">
+      <h3>{{ repo.name }}</h3>
+      <p>{{ repo.description }}</p>
+    </div>
+  </a>
 </div>
