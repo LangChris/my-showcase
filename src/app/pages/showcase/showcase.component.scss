@@ -1,8 +1,15 @@
 :host {
   display: block;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/background.png') center center / cover no-repeat;
+  // background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/abstract-bg.png') center center / cover no-repeat;
+  // background-attachment: fixed;
+  // background-size: cover;
+  // color: #e0e0e0;
+
+  background: linear-gradient(rgba(10, 20, 30, 0.7), rgba(10, 20, 30, 0.7)), url('/network-bg.png') center center / cover no-repeat;
   background-attachment: fixed;
-  color: #e0e0e0;
+  background-size: cover;
+  color: #fff;
+
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
