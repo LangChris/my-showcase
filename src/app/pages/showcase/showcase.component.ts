@@ -16,10 +16,10 @@ export class ShowcaseComponent {
   githubHandle = 'LangChris';
 
   screenshots = [
-    'screenshots/budget-lab-preview.png',
-    'screenshots/arwhome-preview.png',
-    'screenshots/christmas-list-preview.png',
-    'screenshots/realestate-calculator-preview.png',
+    'screenshots/screenshot1.png',
+    'screenshots/screenshot2.png',
+    'screenshots/screenshot3.png',
+    'screenshots/screenshot4.png',
   ];
 
   scrollTo(sectionId: 'top' | 'mid' | 'bottom'): void {
