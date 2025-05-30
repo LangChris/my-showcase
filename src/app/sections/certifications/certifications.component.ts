@@ -6,8 +6,4 @@ import { Component } from '@angular/core';
   styleUrl: './certifications.component.scss'
 })
 export class CertificationsComponent {
-  certifications = [
-    { title: 'AWS Certified Developer - Associate', date: '2025-05-23' },
-    { title: 'Agile SAFe Certified', date: '2023-10-01' },
-  ];
 }

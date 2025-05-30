@@ -38,4 +38,22 @@ technicalSkills = {
 
     return qTokens.every(token => target.includes(token));
   }
+
+  getHTMLValues(group: { key: string; value: string[] }): string {
+    if (!this.techSearch.trim()) return group.value.join(', ');
+
+    return group.value
+      .map(value => {
+        const normalizedValue = this.normalize(value);
+        const qTokens = this.normalize(this.techSearch).split(/\s+/);
+        const highlightedValue = qTokens.reduce((acc, token) => {
+          if (normalizedValue.includes(token)) {
+            return acc.replace(new RegExp(token, 'gi'), `<span class="highlight-text">${token}</span>`);
+          }
+          return acc;
+        }, value);
+        return highlightedValue;
+      })
+      .join(', ');
+  }
 }

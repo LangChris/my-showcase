@@ -1,4 +1,4 @@
-<div class="tech-expertise centered">
+<div class="tech">
   <h2 class="text-center">Technical Expertise</h2>
 
   <div class="tech-search-wrapper">
@@ -13,13 +13,13 @@
     </button>
   </div>
 
-  <div class="tech-grid">
+  <div class="card-grid">
     <div 
       *ngFor="let skillGroup of technicalSkills | keyvalue"
-      class="tech-group" 
+      class="card border-blue" 
       [ngClass]="{ 'highlight': matchesSearch(skillGroup) }">
       <h3>{{ skillGroup.key }}</h3>
-      <p>{{ skillGroup.value.join(', ') }}</p>
+      <p [innerHTML]="getHTMLValues(skillGroup)"></p>
     </div>
   </div>
 </div>

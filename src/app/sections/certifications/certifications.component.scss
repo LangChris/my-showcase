@@ -1,27 +1,16 @@
-.tab-grid {
+.container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1rem;
+  padding: 1rem;
 }
 
-.tab-card {
-  background: #1e1e1e;
-  border: 1px solid #333;
-  border-radius: 12px;
-  padding: 1rem;
-  text-align: center;
-  transition: transform 0.3s ease, background 0.3s;
-
-  h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    color: #90caf9;
-  }
-  
-  &:hover {
-    background: #2a2a2a;
-    transform: scale(1.02);
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
+.badge {
+  background: url('/aws-certified-developer-associate.png') no-repeat center center;
+  width: 260px;
+  height: 200px;
+  display: inline-block;
+  background-size: contain;
+  background-attachment: fixed;
+  margin: 0 auto;
 }
