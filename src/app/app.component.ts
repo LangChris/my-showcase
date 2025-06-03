@@ -16,10 +16,10 @@ export class AppComponent {
   githubHandle = 'LangChris';
 
   screenshots = [
-    'my-showcase/images/screenshot1.png',
-    'my-showcase/images/screenshot2.png',
-    'my-showcase/images/screenshot3.png',
-    'my-showcase/images/screenshot4.png',
+    'images/screenshot1.png',
+    'images/screenshot2.png',
+    'images/screenshot3.png',
+    'images/screenshot4.png',
   ];
 
   scrollTo(sectionId: 'top' | 'mid' | 'bottom'): void {
