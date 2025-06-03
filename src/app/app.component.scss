@@ -5,7 +5,7 @@
   // background-size: cover;
   // color: #e0e0e0;
 
-  background: linear-gradient(rgba(10, 20, 30, 0.7), rgba(10, 20, 30, 0.7)), url('/images/network-bg.png') center center / cover no-repeat;
+  background: linear-gradient(rgba(10, 20, 30, 0.7), rgba(10, 20, 30, 0.7)), url('images/network-bg.png') center center / cover no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: #fff;
@@ -32,7 +32,7 @@
 }
 
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/hero-bg.png') center center / cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('images/hero-bg.png') center center / cover no-repeat;
   background-attachment: fixed;
   box-shadow: 0 4px 8px 0 #eeeeee;
   color: #fff;
