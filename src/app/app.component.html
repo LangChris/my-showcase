@@ -1,3 +1,89 @@
 <div id="top"></div>
-<router-outlet />
+
+<div class="hero">
+    <h1 class="hero-title">{{ contactName }}</h1>
+    <p class="subtitle">
+      {{ subtitle }}
+      <br />
+      {{ location }}
+    </p>
+    <p class="hero-info"><a [href]="'tel:' + contactPhone">{{ contactPhone }}</a></p>
+    <p class="hero-info"><a [href]="'email:' + contactEmail">{{ contactEmail }}</a></p>
+    <p class="hero-info"><a [href]="'https://' + website" target="_blank">{{ website }}</a></p>
+    
+    <div class="scroll-down" (click)="scrollTo('mid')" title="Scroll to Showcase">&#8675;</div>
+</div>
+
+<div class="section about">
+  <h2>Who am I?</h2>
+  <p>I am an innovator, a problem solver, and a sponge when it comes to coding and best development practices.</p>
+  <p>
+    I’m a full stack cloud-native engineer passionate about building scalable, performant, and elegant software solutions.
+    specializing in <strong>TypeScript</strong>, <strong>Angular</strong>, <strong>Node.js</strong>, and <strong>serverless architecture on AWS</strong>.
+  </p>
+  <p>
+    With over 9 years of professional experience driving operational excellence and delivering high-impact enterprise solutions, I bring deep expertise in cloud technologies, distributed architecture, and modern engineering practices.
+  </p>
+  <p>
+    I’m highly proficient with <strong>AWS Cloud</strong>, <strong>Docker</strong>, <strong>Kubernetes</strong>, and <strong>Angular</strong>, and apply best practices like <strong>CI/CD</strong>, <strong>TDD</strong>, <strong>Stateless Design</strong>, and <strong>Microservices</strong> to ensure reliability and agility throughout the software lifecycle.
+  </p>
+  <p>
+    My development toolkit spans <strong>Java</strong>, <strong>Node.js</strong>, <strong>Angular</strong>, <strong>Spring</strong>, and <strong>SOA</strong>, and I’m experienced in both <strong>Agile</strong> and <strong>Waterfall</strong> SDLC models. I thrive in dynamic, collaborative environments where I can combine my technical acumen and systems thinking to deliver impactful, forward-thinking solutions.
+  </p>
+</div>
+
+<div class="section looking-for">
+  <h2>What I'm Looking For</h2>
+  <p>
+    I thrive in environments where I can architect scalable solutions, work alongside high-performing teams, and contribute to meaningful projects with cloud-native and full stack technologies.
+  </p>
+</div>
+
+<div class="section">
+  <app-best-practices></app-best-practices>
+</div>
+
+<div class="section">
+  <app-technologies></app-technologies>
+</div>
+
+<div class="section">
+  <app-certifications></app-certifications>
+</div>
+
+<div class="section">
+  <app-clients></app-clients>
+</div>
+
+<div class="section">
+  <app-milestones></app-milestones>
+</div>
+
+<div class="section">
+  <app-experience></app-experience>
+</div>
+
+<div id="mid" class="hero">
+    <div class="scroll-down" (click)="scrollTo('top')" title="Back to Top">&#8673;</div>
+    <h1 class="hero-title">Showcase</h1>
+    <div class="scroll-down" (click)="scrollTo('bottom')" title="Scroll to End">&#8675;</div>
+</div>
+
+<div class="section gallery">
+  <h2 class="text-center">Gallery</h2>
+  <app-carousel [images]="screenshots"></app-carousel>
+</div>
+
+<div class="section">
+  <app-code-snippets></app-code-snippets>
+</div>
+
+<div class="section">
+  <app-repositories></app-repositories>
+</div>
+
+<div class="hero">
+    <div class="scroll-down" (click)="scrollTo('mid')" title="Back to Showcase">&#8673;</div>
+</div>
+
 <div id="bottom"></div>
