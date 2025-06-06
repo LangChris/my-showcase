@@ -66,11 +66,11 @@
   }
   
   .scroll-down {
-    margin-top: 2rem;
     font-size: 2rem;
     color: #888;
     animation: bounce 2s infinite;
-    transform: translateZ(40px);
+    margin: 2rem auto 0 auto;
+    width: fit-content;
     cursor: pointer;
   }
 }
